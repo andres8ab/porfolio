@@ -21,40 +21,38 @@ const MainNavigation = () => {
       </div>
       <nav>
         <ul>
-          <div className={classes.list}>
-            <li>
-              <Link
-                href="/"
-                className={router.pathname == "/" ? classes.active : ""}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className={router.pathname == "/about" ? classes.active : ""}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className={router.pathname == "/projects" ? classes.active : ""}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className={router.pathname == "/contact" ? classes.active : ""}
-              >
-                Contact
-              </Link>
-            </li>
-          </div>
+          <li>
+            <Link
+              href="/"
+              className={router.pathname == "/" ? classes.active : ""}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className={router.pathname == "/about" ? classes.active : ""}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/projects"
+              className={router.pathname == "/projects" ? classes.active : ""}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className={router.pathname == "/contact" ? classes.active : ""}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
