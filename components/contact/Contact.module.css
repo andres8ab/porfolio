@@ -1,0 +1,26 @@
+.contact {
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 43rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 3rem auto;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  justify-self: center;
+  align-self: center;
+}
+
+.contact img {
+  height: auto;
+  width: 5rem;
+  margin: 2rem;
+}

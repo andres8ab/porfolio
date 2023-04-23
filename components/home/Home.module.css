@@ -1,0 +1,41 @@
+.home {
+  font-size: 2rem;
+}
+
+.home p {
+  color: #087f5b;
+}
+
+.logos {
+  display: grid;
+  margin: 5rem auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.logos img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.react:hover {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.other {
+  transition: transform 250ms;
+}
+
+.other:hover {
+  transform: translateY(-10px);
+}

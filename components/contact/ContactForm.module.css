@@ -1,0 +1,94 @@
+.formControl {
+  margin-bottom: 1rem;
+}
+
+.formControl input,
+.formControl textarea,
+.formControl label {
+  display: block;
+}
+
+.formControl label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formControl input,
+.formControl textarea,
+.formControl select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+  text-align: unset;
+  vertical-align: top;
+}
+
+.formControl input:focus,
+.formControl textarea:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+.message select,
+.message textarea {
+  height: 7rem;
+  vertical-align: text-top;
+}
+
+.controlGroup {
+  display: flex;
+  text-align: left;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  background-color: #b2f2bb;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #343a40;
+  margin-top: 2rem;
+  line-height: 1.6;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.controlGroup .formControl {
+  min-width: 15rem;
+  flex: 1;
+}
+
+.formActions {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.formActions button:disabled,
+.formActions button:disabled:hover,
+.formActions button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.formActions button {
+  margin-left: 1rem;
+}
+
+.invalid input,
+.invalid textarea {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus,
+.invalid textarea:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.errorText {
+  color: #b40e0e;
+}
