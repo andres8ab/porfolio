@@ -1,61 +1,41 @@
 import Link from "next/link";
-import Image from "next/image";
-import { useRouter } from "next/router";
+import Image from "next/legacy/image";
 
-import classes from "./MainNavigation.module.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const MainNavigation = () => {
-  const router = useRouter();
   return (
-    <header className={classes.header}>
-      <div className={classes.logo}>
-        <Link href="/">
+    <Navbar bg="success" expand="lg">
+      <Container>
+        <Navbar.Brand href="/">
           <Image
             src="/img/AOlogo.png"
             alt="Logo Andres Ochoa"
             width="100"
             height="100"
-            priority
           />
-        </Link>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <Link
-              href="/"
-              className={router.pathname == "/" ? classes.active : ""}
-            >
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto fw-semibold">
+            <Nav.Link as={Link} href="/">
               Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about"
-              className={router.pathname == "/about" ? classes.active : ""}
-            >
+            </Nav.Link>
+            <Nav.Link as={Link} href="/about">
               About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/projects"
-              className={router.pathname == "/projects" ? classes.active : ""}
-            >
+            </Nav.Link>
+            <Nav.Link as={Link} href="/projects">
               Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className={router.pathname == "/contact" ? classes.active : ""}
-            >
+            </Nav.Link>
+            <Nav.Link as={Link} href="/contact">
               Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

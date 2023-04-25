@@ -8,14 +8,12 @@
 
 .logos {
   display: grid;
-  margin: 5rem auto;
+  margin: 2rem auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
-}
-
-.logos img {
-  height: 6rem;
-  width: 6rem;
+  padding: 2rem;
+  overflow: visible;
+  height: 100%;
 }
 
 .react:hover {

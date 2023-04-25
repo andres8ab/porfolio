@@ -1,5 +1,6 @@
 import Image from "next/image";
 import classes from "./Home.module.css";
+import { Container } from "react-bootstrap";
 
 const Home = () => {
   return (
@@ -8,64 +9,64 @@ const Home = () => {
         <h1>Andres Ochoa</h1>
         <p>Front-end Developer</p>
       </div>
-      <div className={classes.logos}>
+      <Container fluid className={classes.logos}>
         <Image
           className={classes.other}
-          src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+          src="/img/html.svg"
           alt="html logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.other}
-          src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg"
+          src="/img/javascript.svg"
           alt="javascript logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.other}
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+          src="/img/css.svg"
           alt="css logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.react}
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          src="/img/react.svg"
           alt="react logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.react}
-          src="https://cdn.worldvectorlogo.com/logos/redux.svg"
+          src="/img/redux.svg"
           alt="redux logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.other}
-          src="https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+          src="/img/nextjs.svg"
           alt="next logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.other}
           src="/img/Bootstrap.svg"
           alt="bootstrap logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
         <Image
           className={classes.other}
           src="/img/Tailwind.svg"
           alt="tailwind logo"
-          width="12"
-          height="12"
+          width="60"
+          height="60"
         />
-      </div>
+      </Container>
     </section>
   );
 };
