@@ -1,12 +1,12 @@
-import Image from "next/image";
-import classes from "./Home.module.css";
-import { Container } from "react-bootstrap";
+import Image from 'next/image';
+import classes from './Home.module.css';
+import { Container } from 'react-bootstrap';
 
 const Home = () => {
   return (
     <section className={classes.home}>
       <div>
-        <h1>Andres Ochoa</h1>
+        <h1 className="fs-1 fw-bold">Andres Ochoa</h1>
         <p>Front-end Developer</p>
       </div>
       <Container fluid className={classes.logos}>
