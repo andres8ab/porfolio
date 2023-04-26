@@ -15,6 +15,9 @@ body {
   width: -webkit-fill-available;
 }
 
+@media screen and (max-width: 600px) {
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
