@@ -1,9 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
-import classes from "./Contact.module.css";
-import ContactForm from "./ContactForm";
+import Link from 'next/link';
+import Image from 'next/image';
+import classes from './Contact.module.css';
+import ContactForm from './ContactForm';
 
-const Contact = () => {
+const ContactBox = () => {
   return (
     <section className={classes.contact}>
       <h1>Contact</h1>
@@ -38,4 +38,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactBox;

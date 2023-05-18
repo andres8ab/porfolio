@@ -1,7 +1,7 @@
-const { default: Contact } = require("../../../components/contact/Contact");
+import ContactBox from '../../../components/contact/ContactBox';
 
 const ContactPage = () => {
-  return <Contact />;
+  return <ContactBox />;
 };
 
 export default ContactPage;
