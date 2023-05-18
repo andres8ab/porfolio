@@ -1,8 +1,10 @@
-import UseInput from "../../hooks/use-input";
-import classes from "./ContactForm.module.css";
+import { toast } from 'react-toastify';
+import UseInput from '../../hooks/use-input';
+import { sendContactForm } from '../../lib/api';
+import classes from './ContactForm.module.css';
 
-const isNotEmpty = (value) => value.trim() !== "";
-const isEmail = (value) => value.includes("@");
+const isNotEmpty = (value) => value.trim() !== '';
+const isEmail = (value) => value.includes('@');
 
 const BasicForm = (props) => {
   const {
@@ -38,13 +40,23 @@ const BasicForm = (props) => {
     formIsValid = true;
   }
 
-  const formSubmissionHandler = (event) => {
+  const formSubmissionHandler = async (event) => {
     event.preventDefault();
 
     if (!formIsValid) {
       return;
     }
-    console.log(enteredName, enteredMessage, enteredEmail);
+    const values = {
+      name: enteredName,
+      email: enteredEmail,
+      message: enteredMessage,
+    };
+    try {
+      await sendContactForm(values);
+      toast.success('Email sent successfully');
+    } catch (error) {
+      toast.error(error.message);
+    }
 
     nameReset();
     messageReset();

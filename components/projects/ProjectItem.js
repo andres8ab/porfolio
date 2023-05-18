@@ -42,24 +42,50 @@ const ProjectItem = () => {
           />
         </Link>
       </div>
-      <Card className={classes.card}>
-        <Image src="/img/obapp.jpeg" alt="OB web" width="1000" height="1000" />
-        <div className={classes.logos}>
-          <Image src="/img/react.svg" alt="react logo" width="20" height="20" />
+      <div>
+        <Card className={classes.card}>
+          <Link href="https://next-tailwind-ob.vercel.app/" target="_blank">
+            <Image
+              src="/img/obapp.jpeg"
+              alt="OB web"
+              width="1000"
+              height="1000"
+            />
+            <div className={classes.logos}>
+              <Image
+                src="/img/react.svg"
+                alt="react logo"
+                width="20"
+                height="20"
+              />
+              <Image
+                src="/img/nextjs.svg"
+                alt="nextjs logo"
+                width="20"
+                height="20"
+              />
+              <Image
+                src="/img/Tailwind.svg"
+                alt="Tailwind logo"
+                width="20"
+                height="20"
+              />
+            </div>
+          </Link>
+        </Card>
+        <Link
+          href="https://github.com/andres8ab/next-tailwind-ob"
+          target="_blank"
+        >
           <Image
-            src="/img/nextjs.svg"
-            alt="nextjs logo"
-            width="20"
-            height="20"
+            src="/img/github.png"
+            className={classes.github}
+            alt="github logo"
+            width="200"
+            height="200"
           />
-          <Image
-            src="/img/Tailwind.svg"
-            alt="Tailwind logo"
-            width="20"
-            height="20"
-          />
-        </div>
-      </Card>
+        </Link>
+      </div>
     </div>
   );
 };

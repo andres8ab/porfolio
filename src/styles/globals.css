@@ -42,3 +42,22 @@ a {
     color-scheme: dark;
   }
 }
+
+.form-heading {
+  color: #2a2a2a;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  font-size: 18px;
+  margin: 0 0 8px;
+  padding: 0;
+}
+.form-answer {
+  color: #2a2a2a;
+  font-weight: 300;
+  text-align: left;
+  line-height: 20px;
+  font-size: 16px;
+  margin: 0 0 24px;
+  padding: 0;
+}
