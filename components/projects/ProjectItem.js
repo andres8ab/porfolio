@@ -32,13 +32,13 @@ const ProjectItem = () => {
             </div>
           </Link>
         </Card>
-        <Link href="https://github.com/andres8ab" target="_blank">
+        <Link href="https://github.com/andres8ab/Victor" target="_blank">
           <Image
             src="/img/github.png"
             className={classes.github}
             alt="github logo"
-            width="200"
-            height="200"
+            width="180"
+            height="180"
           />
         </Link>
       </div>
@@ -48,8 +48,8 @@ const ProjectItem = () => {
             <Image
               src="/img/obapp.jpeg"
               alt="OB web"
-              width="1000"
-              height="1000"
+              width="500"
+              height="500"
             />
             <div className={classes.logos}>
               <Image
